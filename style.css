@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  pad: 0;
+}
+body {
+  height: 97.66vh;
+}
+.container2 > div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 > div:nth-child(1n) {
+  background-color: #06d6a0;
+}
+
+.container2 > div:nth-child(3n) {
+  background-color: #118ab2;
+}
+
+.container2 > div:nth-child(2n) {
+  background-color: #ef476f;
+}
+
+.container2 > div:nth-child(4n) {
+  background-color: #ffd166;
+}
+
+.container > div {
+  text-align: center;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #06d6a0;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #118ab2;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #ef476f;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffd166;
+}

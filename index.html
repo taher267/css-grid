@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Grid</title>
+    <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 90px);
+        grid-template-rows: repeat(2, 90px);
+        gap: 5px;
+        /* justify-items: end;
+        align-items: end; */
+      }
+      .seven {
+        justify-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="seven">7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body>
+  <!-- 
+ <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 90px);
+        grid-template-rows: repeat(2, 90px);
+        gap: 5px;
+        /* justify-items: end;
+        align-items: end; */
+      }
+      .seven {
+        justify-self: end;
+      }
+    </style>
+<div class="container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="seven">7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+ -->
+  <!-- <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 90px);
+        grid-template-rows: repeat(2, 90px);
+        gap: 5px;
+        justify-content: space-evenly;
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: center; */
+        align-content: center;
+      }
+    </style> -->
+  <!-- <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, 200px); */
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+      }
+    </style>
+  
+    <div class="container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body> -->
+  <!-- <div class="container2">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="content">CONTENT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas:
+          "m m h h h h h h h h h h"
+          "m m c c c c c c c c c c"
+          ". f f f f f f f f f f f";
+      }
+
+      .header {
+        grid-area: h;
+      }
+
+      .footer {
+        grid-area: f;
+      }
+      .content {
+        grid-area: c;
+      }
+      .menu {
+        grid-area: m;
+      }
+    </style> -->
+  <!-- <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+      }
+
+      .header {
+        grid-column: 2/-1;
+      }
+      .footer {
+        grid-column: 1 / -1;
+      }
+      .content {
+        height: 100%;
+        grid-column: 2/-1;
+      }
+      .menu {
+        grid-row: 1/3;
+      }
+    </style> -->
+  <!-- <style>
+      .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+      }
+
+      .header {
+        grid-column: 1/-1;
+      }
+      .footer {
+        grid-column: 1 / -1;
+      }
+      .content {
+        height: 100%;
+        grid-column: 2/-1;
+      }
+    </style> -->
+  <!--  <style>
+      .container2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .content {
+        grid-column: 2/-1; /*start 2 end 12 means -1*/
+      }
+      .header {
+        grid-column: 1/-1;
+      }
+      .footer {
+        grid-column: 1 / -1;
+      }
+    </style> -->
+  <!-- <style>
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+    }
+    .header {
+      grid-column: 1/-1;
+    }
+    .footer {
+      grid-column: 1 / span 2;
+    }
+  </style> -->
+  <!-- <style>
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        /* grid-template: repeat(3, 100px) / 1fr 2fr; */
+      }
+      .header {
+        grid-column: 1/-1; /*3*/
+        /* grid-column: 1/4; */
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        /* https://www.figma.com/file/CHqCa7V7VDF3ntBJgY1wKI/css-Grid?node-id=1%3A2 */
+      }
+      .footer {
+        /* grid-column: 1/-1; */
+        grid-column: 1 / span 2;
+      }
+  </style> -->
+  <style>
+    /* <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div> */
+    .container {
+      display: grid;
+      /*grid-template: repeat(2, 300px) / repeat(3, 1fr); 1fr 1fr 1fr*/
+      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+      /* grid-template-rows: 300px 300px; */
+    }
+    /* .container {
+        display: grid;
+        grid-template: 2fr 3fr/1fr 2fr; row/colums
+        gap: 2px 3px;
+      } */
+    /* .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; (1+2)/100% fraction unit
+        grid-template-rows: 2fr 3fr; (2+3)/100% fraction unit
+        gap: 2px 3px;
+      } */
+    /* .container {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        gap: 2px 3px; 
+      } */
+
+    /* .container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  } */
+
+    /* .container {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+  } */
+
+    /* .container {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 300px 300px;
+  } */
+  </style>
+</html>
